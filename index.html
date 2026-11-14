@@ -6,7 +6,7 @@
     <title>Jibran Jan | Frontend Engineer</title>
     <meta name="description" content="Jibran Jan is a frontend engineer in Bengaluru building React and TypeScript interfaces for Equip and AutoProctor: product UI, web performance and design systems.">
     <meta name="author" content="Jibran Jan">
-    <link rel="canonical" href="https://jibranjan.github.io/Portfolio./">
+    <link rel="canonical" href="https://jibranjan.github.io/portfolio/">
 
     <meta name="theme-color" content="#faf8f3" media="(prefers-color-scheme: light)">
     <meta name="theme-color" content="#0c0c0d" media="(prefers-color-scheme: dark)">
@@ -14,8 +14,8 @@
     <meta property="og:type" content="website">
     <meta property="og:title" content="Jibran Jan | Frontend Engineer">
     <meta property="og:description" content="React and TypeScript interfaces that load fast and read clearly. Product UI, web performance and design systems.">
-    <meta property="og:url" content="https://jibranjan.github.io/Portfolio./">
-    <meta property="og:image" content="https://jibranjan.github.io/Portfolio./og.png">
+    <meta property="og:url" content="https://jibranjan.github.io/portfolio/">
+    <meta property="og:image" content="https://jibranjan.github.io/portfolio/og.png">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
     <meta name="twitter:card" content="summary_large_image">
@@ -46,8 +46,8 @@
         "@type": "Person",
         "name": "Jibran Jan",
         "jobTitle": "Frontend Engineer",
-        "url": "https://jibranjan.github.io/Portfolio./",
-        "image": "https://jibranjan.github.io/Portfolio./assets/img/jibran.webp",
+        "url": "https://jibranjan.github.io/portfolio/",
+        "image": "https://jibranjan.github.io/portfolio/assets/img/jibran.webp",
         "address": { "@type": "PostalAddress", "addressLocality": "Bengaluru", "addressCountry": "IN" },
         "worksFor": { "@type": "Organization", "name": "Equip", "url": "https://equip.co/" },
         "sameAs": ["https://www.linkedin.com/in/jibran-jan/", "https://github.com/jibranjan"],
@@ -159,6 +159,53 @@
           </header>
 
           <div class="bento">
+            <article class="card card--feature reveal">
+              <div class="card__body">
+                <p class="card__meta"><span class="card__status">In progress</span> Hardest problem so far / Equip / 2026</p>
+                <h3>Candidates were landing on the wrong company and college. I found out why.</h3>
+                <p>
+                  The résumé parser was reading names correctly. The matching step after it was not: it attached
+                  candidates to look-alike companies, left others blank, and created duplicates. I traced the
+                  fault through three import paths that each scored names differently, and showed with real
+                  cases that no similarity cutoff could ever separate the right matches from the wrong ones.
+                </p>
+                <p>
+                  I documented twelve distinct failures, designed eight fixes, and am now replacing the scoring
+                  with a single matcher that compares whole words, proven against the same test résumés before
+                  and after.
+                </p>
+                <ul class="feature__stats">
+                  <li><strong>12</strong><span>failures documented</span></li>
+                  <li><strong>3</strong><span>import paths unified</span></li>
+                  <li><strong>8</strong><span>fixes designed</span></li>
+                </ul>
+                <div class="card__foot">
+                  <ul class="tags">
+                    <li>Root-cause analysis</li>
+                    <li>Entity matching</li>
+                    <li>Python</li>
+                    <li>Test set</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="card__art" aria-hidden="true">
+                <div class="match">
+                  <div class="match__head"><span>Résumé says</span><span>Matched to</span></div>
+                  <div class="match__row">
+                    <span>Univ. of Miami</span>
+                    <span><s>Miami University of Ohio</s><b>University of Miami</b></span>
+                  </div>
+                  <div class="match__row">
+                    <span>Delhi University</span>
+                    <span><s>National Law University Delhi</s><b>Delhi University</b></span>
+                  </div>
+                  <div class="match__row">
+                    <span>BITS Pilani</span>
+                    <span><s>No match</s><b>BITS Pilani</b></span>
+                  </div>
+                </div>
+              </div>
+            </article>
             <article class="card card--wide reveal">
               <div class="card__art" aria-hidden="true">
                 <div class="diff">
@@ -379,26 +426,6 @@
                 </div>
               </div>
             </article>
-
-            <article class="card card--full reveal">
-              <div class="card__body">
-                <p class="card__meta"><span class="card__status">In progress</span> Data quality / Equip / 2026</p>
-                <h3>Filing résumé names under the right company and college</h3>
-                <p>
-                  The parser read names correctly, but a letter-similarity score then filed them under look-alikes,
-                  so "Univ. of Miami" missed "University of Miami". I traced it to three import paths with three
-                  different cutoffs, wrote up twelve issues with real examples, and am replacing the score with one
-                  matcher that compares whole words, measured before and after on the same set of test résumés.
-                </p>
-                <div class="card__foot">
-                  <ul class="tags">
-                    <li>Investigation</li>
-                    <li>Matching rules</li>
-                    <li>Before and after tests</li>
-                  </ul>
-                </div>
-              </div>
-            </article>
           </div>
         </div>
       </section>
@@ -433,6 +460,14 @@
                 <li>Rebuilt the recruiter team and profile screens, and moved older jQuery pages to plain JavaScript.</li>
                 <li>Joined full-time when the internship ended.</li>
               </ul>
+            </div>
+          </article>
+
+          <article class="xp reveal">
+            <p class="xp__when">2020 to 2024</p>
+            <div>
+              <h3>B.Tech, Computer Science</h3>
+              <p class="xp__org">Rayat Bahra University, Mohali</p>
             </div>
           </article>
         </div>

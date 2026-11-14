@@ -1,7 +1,7 @@
 # Portfolio
 
 Personal site of Jibran Jan, frontend engineer.
-Live at <https://jibranjan.github.io/Portfolio./>
+Live at <https://jibranjan.github.io/portfolio/>
 
 Plain HTML, CSS and one small ES module. There is no build step and nothing to install.
 
