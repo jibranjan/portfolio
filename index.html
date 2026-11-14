@@ -1,303 +1,583 @@
-<!-- Live link:  https://jibranjan.github.io/Portfolio./ -->
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <script src="https://kit.fontawesome.com/1b09ae3a4c.js" crossorigin="anonymous"></script>
-    <link rel="icon" type="icon" href="resume_icon.png">
-    <link rel="stylesheet" href="style.css">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resume</title>
-</head>
-<body>
-    <header>
-        <nav class="nav">
-            <div id="hamburger">
-                <i class="fa-sharp fa-solid fa-bars"></i>
-            </div>
-            <ul type="none"class="nav_ul1">
-                <li><a href="#">Home</a></li> 
-                <li><a href="#About">About</a></li> 
-                <li><a href="#Skills">Skills</a></li> 
-                <li><a href="#Work-experience">Experience</a></li> 
-                <li><a href="#Education">Education</a></li> 
-                <li><a href="#Portfolio">Portfolio</a></li> 
-                <li><a href="#Contact">Contact</a></li> 
-            </ul>
-        </nav>
-        <div class="mid_header">
-            <h1 class="myName">Jibran Jan</h1>
-            <ul type="none" class="nav_ul2">
-                <li><a href="https://www.instagram.com/jibran_jan_"><i class="fa-brands fa-instagram"></i></a></li>
-                <li><a href="https://github.com/jibranjan"><i class="fa-brands fa-github"></i></a></li>
-                <li><a href="https://www.linkedin.com/in/jibran-jan"><i class="fa-brands fa-linkedin-in"></i></a></li>
-                <li><a href="https://www.facebook.com/jibranjan77"><i class="fa-brands fa-facebook-f"></i></a></li>
-            </ul>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Jibran Jan | Frontend Engineer</title>
+    <meta name="description" content="Jibran Jan is a frontend engineer in Bengaluru building React and TypeScript interfaces for Equip and AutoProctor: product UI, web performance and design systems.">
+    <meta name="author" content="Jibran Jan">
+    <link rel="canonical" href="https://jibranjan.github.io/Portfolio./">
+
+    <meta name="theme-color" content="#faf8f3" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#0c0c0d" media="(prefers-color-scheme: dark)">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Jibran Jan | Frontend Engineer">
+    <meta property="og:description" content="React and TypeScript interfaces that load fast and read clearly. Product UI, web performance and design systems.">
+    <meta property="og:url" content="https://jibranjan.github.io/Portfolio./">
+    <meta property="og:image" content="https://jibranjan.github.io/Portfolio./og.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <link rel="icon" href="favicon.ico" sizes="32x32">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+    <link rel="preload" href="assets/fonts/geist-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="assets/fonts/instrument-serif-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <script>
+      (function () {
+        var root = document.documentElement;
+        var stored = null;
+        try {
+          stored = localStorage.getItem("theme");
+        } catch (error) {}
+        root.dataset.theme = stored || (matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark");
+        root.classList.add("js");
+      })();
+    </script>
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Jibran Jan",
+        "jobTitle": "Frontend Engineer",
+        "url": "https://jibranjan.github.io/Portfolio./",
+        "image": "https://jibranjan.github.io/Portfolio./assets/img/jibran.webp",
+        "address": { "@type": "PostalAddress", "addressLocality": "Bengaluru", "addressCountry": "IN" },
+        "alumniOf": { "@type": "CollegeOrUniversity", "name": "Rayat Bahra University" },
+        "worksFor": { "@type": "Organization", "name": "Equip", "url": "https://equip.co/" },
+        "sameAs": ["https://www.linkedin.com/in/jibran-jan/", "https://github.com/jibranjan"],
+        "knowsAbout": ["React", "TypeScript", "JavaScript", "Tailwind CSS", "Web performance", "Design systems", "Python", "Flask", "PostgreSQL"]
+      }
+    </script>
+  </head>
+
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <svg class="sprite" width="0" height="0" aria-hidden="true">
+      <symbol id="i-arrow-up-right" viewBox="0 0 24 24"><path d="M7 17 17 7M8 7h9v9"/></symbol>
+      <symbol id="i-arrow-down" viewBox="0 0 24 24"><path d="M12 5v14M6 13l6 6 6-6"/></symbol>
+      <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></symbol>
+      <symbol id="i-moon" viewBox="0 0 24 24"><path d="M20 14.5A8 8 0 1 1 9.5 4a6.5 6.5 0 0 0 10.5 10.5Z"/></symbol>
+      <symbol id="i-copy" viewBox="0 0 24 24"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V6a2 2 0 0 1 2-2h9"/></symbol>
+    </svg>
+
+    <header class="site-header">
+      <nav class="nav" aria-label="Main">
+        <a class="nav__brand" href="#top" aria-label="Jibran Jan, back to top">
+          <svg viewBox="0 0 64 64" aria-hidden="true">
+            <rect width="64" height="64" rx="16" fill="#0c0c0d"/>
+            <g fill="none" stroke="#f3f1ec" stroke-width="6" stroke-linecap="round">
+              <path d="M25 27v14a8 8 0 0 1-8 8"/>
+              <path d="M44 27v14a8 8 0 0 1-8 8"/>
+            </g>
+            <g fill="#f6a723">
+              <circle cx="25" cy="16.5" r="4"/>
+              <circle cx="44" cy="16.5" r="4"/>
+            </g>
+          </svg>
+          Jibran Jan
+        </a>
+
+        <ul class="nav__links" data-nav>
+          <li><a href="#work">Work</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#toolkit">Toolkit</a></li>
+          <li><a href="#about">About</a></li>
+        </ul>
+
+        <div class="nav__actions">
+          <button class="theme-toggle" type="button" data-theme-toggle aria-label="Switch theme">
+            <svg class="icon icon--sun" aria-hidden="true"><use href="#i-sun"/></svg>
+            <svg class="icon icon--moon" aria-hidden="true"><use href="#i-moon"/></svg>
+          </button>
+          <a class="btn btn--primary btn--small" href="#contact">Get in touch</a>
         </div>
+      </nav>
     </header>
 
-    <main>
-        <section id="About">
-            <div class="my_image">
-                <img src="main-image.jpeg">
-            </div>
-            <div class="description">
-                <p class="summary">Dependable and highly motivated computer science student seeking mentorship and guidance as a fresher in the industry. Eager to apply programming skills including C++, Java, HTML, CSS, and JavaScript to contribute to a dynamic team.</p>
-            </div>
-        </section>
-        <section id="Skills">
-            <h1 class="section-title"><i class="fa-solid fa-chalkboard-user"></i> SKILLS</h1>
-            <div class="skills_section">
-                <div class="skill_bar">
-                    <div class="bar">
-                        <div class="Cpp same_for_bar">
-                            C++
-                        </div>
-                    </div>
-                    <div class="bar">
-                        <div class="Java same_for_bar">
-                            Java
-                        </div>
-                    </div>
-                    <div class="bar">
-                        <div class="Html same_for_bar">
-                            HTML
-                        </div>
-                    </div>
-                    <div class="bar">
-                        <div class="CSS same_for_bar">
-                            CSS
-                        </div>
-                    </div>
-                    <div class="bar">
-                        <div class="Tailwind same_for_bar">
-                            Tailwind
-                        </div>
-                    </div>
-                    <div class="bar">
-                        <div class="JavaScript same_for_bar">
-                            JavaScript
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section id="Work-experience">
-            <h1 class="section-title">EXPERIENCE</h1>
-            <div class="timeline">
-                <div class="timeline-box">
-                    <div class="we-heading">
-                        <h1>Teaching (PSP)</h1>
-                    </div>
-                    <div class="organization">
-                        <p><span class="bold-name">E-Matrix</span> - Srinagar, Kashmir, India</p>
-                    </div>
-                    <div class="duration">
-                        <p>07/2022 - 08/2022</p>
-                    </div>
-                    <div class="about-experience">
-                        <p>Facilitated peer-to-peer (P2P) teaching experiences, collaborating closely with students and fellow staff members to achieve improved learning outcomes. Strengthened my programming and logical aptitude while instructing students. Successfully covered the designated syllabus within stipulated timeframes. Engaged in parent-teacher conferences, honing my communication skills further.</p>
-                    </div>
-                </div>
-                <div class="timeline-box">
-                    <div class="we-heading">
-                        <h1>Internship (Java)</h1>
-                    </div>
-                    <div class="organization">
-                        <p><span class="bold-name">In-Campus</span> - Rayat Bahra University, Mohali</p>
-                    </div>
-                    <div class="duration">
-                        <p>15/01/2023 - 15/02/2023</p>
-                    </div>
-                    <div class="about-experience">
-                        <p>Completed a 30-day in-campus training program focused on Java programming. Acquired a solid foundation in Java fundamentals and Object-Oriented Programming (OOPS) principles. Sharpened logic-building skills through extensive problem-solving exercises.</p>
-                    </div>
-                </div>
-                <div class="timeline-box">
-                    <div class="we-heading">
-                        <h1>Internship (Full Stack)</h1>
-                    </div>
-                    <div class="organization">
-                        <p><span class="bold-name">In-Campus</span> - Rayat Bahra University, Mohali</p>
-                    </div>
-                    <div class="duration">
-                        <p>10/07/2023 - 25/08/2023</p>
-                    </div>
-                    <div class="about-experience">
-                        <p>Completed a comprehensive 45-day in-campus Full Stack training program covering fundamental concepts in web development, including HTML, CSS, and JavaScript. Gained practical experience working with APIs, Java, Spring Boot, Postman, and PostgreSQL. This intensive program sharpened my logic-building skills and provided hands-on problem-solving opportunities.</p>
-                    </div>
-                </div>
-                <div class="timeline-divider">
-                    <div class="timeline-icons">
-                        <i class="timeline-traveller fas fa-plane"></i>
-                        <i id="experience1" class="fa-regular fa-circle-dot"></i>
-						<i id="experience2" class="fa-regular fa-circle-dot"></i>
-						<i id="experience3" class="fa-regular fa-circle-dot"></i>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section id="Education">
-            <h1 class="section-title">EDUCATION</h1>
-            <div class="timeline">
-                <div class="timeline-box">
-                    <div class="we-heading">
-                        <h1>Matriculation</h1>
-                    </div>
-                    <div class="organization">
-                        <p><span class="bold-name">Elite's co-ed School</span> - Srinagar, Kashmir, India</p>
-                    </div>
-                    <div class="duration">
-                        <p>2018</p>
-                    </div>
-                    <div class="about-experience">
-                        <p>Scored 391/500 marks (distinction)</p>
-                    </div>
-                </div>
-                <div class="timeline-box">
-                    <div class="we-heading">
-                        <h1>+2 PCM</h1>
-                    </div>
-                    <div class="organization">
-                        <p><span class="bold-name">S P higher secondary school</span> - Srinagar, Kashmir, India</p>
-                    </div>
-                    <div class="duration">
-                        <p>2020</p>
-                    </div>
-                    <div class="about-experience">
-                        <p>Scored 351/500 marks (1st division)</p>
-                    </div>
-                </div>
-                <div class="timeline-box">
-                    <div class="we-heading">
-                        <h1>B.tech - Computer science</h1>
-                    </div>
-                    <div class="organization">
-                        <p><span class="bold-name">Rayat Bahra University</span> - Mohali, Chandigarh, India</p>
-                    </div>
-                    <div class="duration">
-                        <p>2020-2024</p>
-                    </div>
-                    <div class="about-experience">
-                        <p>Current CGPA: 7.78</p>
-                    </div>
-                </div>
-                <div class="timeline-divider">
-                    <div class="timeline-icons">
-                        <i class="timeline-traveller2 fa-solid fa-user"></i>
-                        <i id="education1" class="fa-regular fa-circle-dot"></i>
-						<i id="education2" class="fa-regular fa-circle-dot"></i>
-						<i id="education3" class="fa-regular fa-circle-dot"></i>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section id="Portfolio">
-            <h1 class="section-title">PORTFOLIO</h1>
-            <div class="projects">
-                <div class="ph project0">
-                    <div class="project-title p0t">
-                        <h1>Music App</h1> 
-                        <!-- #0c1027 -->
-                        <ul class="pt-on-hover">
-                            <li>I developed a Music App using primarily HTML and Tailwind, complemented by a touch of CSS.</li>
-                            <li>This project replicates the foundational structure of a music application, focusing on its frontend design.</li>
-                            <li>Technologies used- HTML, CSS, Tailwind.</li>
-                            <li>Live link: <a class="link0" href="https://jibranjan.github.io/MusicApp/index.html">jibranjan.github.io/MusicApp/index.html</a></li>
-                        </ul>
-                    </div>
-                    <div class="project-image p0i">
-                        <img src="./musicNinja2.png">
-                    </div>
-                </div>
-                <div class="ph project1">
-                    <div class="project-title p1t">
-                        <h1>Text Translator</h1>
-                        <ul class="pt-on-hover">
-                            <li>I developed a Text Translator using HTML, CSS, and JavaScript</li>
-                            <li>This project replicates the core funtionality of Google Translator, allowing user to input text in one language and recieve the translated text in their desired language.</li>
-                            <li>Technologies used- HTML, CSS, JavaScript, API.</li>
-                            <li>GitHub repository link: <a class="link1" href="https://github.com/jibranjan/Text-Translator">github.com/jibranjan/Text-Translator</a></li>
-                        </ul>
-                    </div>
-                    <div class="project-image p1i">
-                        <img src="./text_translator.jpg">
-                    </div>
-                </div>
-                <div class="ph project2">
-                    <div class="project-title p2t">
-                        <h1>YouTube Clone</h1>
-                        <ul class="pt-on-hover">
-                            <li>I developed a YouTube Clone web application where users can search for and watch videos.</li>
-                            <li>Technologies used- HTML, CSS, JavaScript, API.</li>
-                            <li>Leveraged the Youtube Data API to fetch video data, display searcg results and play videos seamlessly.</li>
-                            <li>GitHub repository link: <a class="link2" href="https://github.com/jibranjan/Youtube-clone">github.com/jibranjan/Youtube-clone</a> </li>
-                        </ul>
-                    </div>
-                    <div class="project-image p2i">
-                        <img src="./youtube_clone.png">
-                    </div>
-                </div>
-                <div class="ph project3">
-                    <div class="project-title p3t">
-                        <h1>Sign-up Form</h1>
-                        <ul class="pt-on-hover">
-                            <li>I created a Sign-up/Sign-in webpage with HTML, CSS and JavaScript for the frontend.</li>
-                            <li>IT i sconnected to our own PostgreSQL database using Java to handle posting and fetching data.</li>
-                            <li>Additionally, I used Postman to verify data rendering.</li>
-                            <li>GitHub repository link: <a class="link3" href="https://github.com/jibranjan/FullStack_sign-up_sign-in">github.com/jibranjan/FullStack_sign-up_sign-in</a></li>
-                        </ul>
-                    </div>
-                    <div class="project-image p3i">
-                        <img src="./form.png">
-                    </div>
-                </div>
-            </div>
-            
-        </section>
-        <section id="Contact">
-            <h1 class="section-title" style="color:white">CONTACTS</h1>
-            <div class="contact-container">
-                <div class="contact-left">
-                    <form class="form">
-                        <input class="form-field" type="text" name="yourname" placeholder="Your Name">
-                        <input class="form-field" type="text" name="youremail" placeholder="Your Email">
-                        <textarea class="form-field" name="message" placeholder="Message" style="font-family: sans-serif;"></textarea>
-                        <button class="form-button" type="button">Send Message</button>
-                    </form>
-                </div>
-                <div class="contact-right">
-                    <!-- <div class="touch">
-                        <div class="rs-title">
-                            <h1>Get In Touch</h1>
-                        </div>
-                        <div class="t-bottom">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
-                        </div>
-                    </div> -->
-                    <div class="address">
-                        <div class="rs-title">
-                            <h1>My Address</h1>
-                        </div>
+    <main id="main">
+      <section class="hero" id="top">
+        <div class="container">
+          <p class="eyebrow">
+            <span class="eyebrow__dot" aria-hidden="true"></span>
+            Jibran Jan
+            <span class="eyebrow__sep" aria-hidden="true"></span>
+            Bengaluru, India
+            <span class="eyebrow__sep" aria-hidden="true"></span>
+            <span data-clock>IST, UTC+5:30</span>
+          </p>
 
-                        <p> <i class="fa-sharp fa-solid fa-location-dot"></i>Nishat, Ziethyar, Srinagar, Kashmir, J&K - 191121</p>
-                        <p> <i class="fa-solid fa-phone"></i>9103171780 / 7006452166</p>
-                        <p><a href="mailto:jibranjan77@gmail.com?subject=feedback" target="_blank"  class="mailidchanges"> <i class="fa-solid fa-envelope"></i>jibranjan77@gmail.com</a></p>
-                    </div>
+          <h1>Frontend engineer building interfaces that load <em>fast</em> and read <em>clearly</em>.</h1>
+
+          <p class="hero__lede">
+            For the past two and a half years I have worked on <strong>Equip</strong> and <strong>AutoProctor</strong>,
+            two SaaS products for hiring and online exams. Mostly React and TypeScript, and often the Flask and
+            PostgreSQL code behind the screen.
+          </p>
+
+          <div class="hero__actions">
+            <div class="hero__buttons">
+              <a class="btn btn--primary" href="#work">
+                See selected work
+                <svg class="icon" aria-hidden="true"><use href="#i-arrow-down"/></svg>
+              </a>
+              <a class="btn btn--ghost" href="resume/Jibran-Jan-Resume.pdf">
+                Résumé (PDF)
+                <svg class="icon" aria-hidden="true"><use href="#i-arrow-up-right"/></svg>
+              </a>
+            </div>
+            <div class="hero__links">
+              <a class="link" href="https://github.com/jibranjan" rel="me noopener">GitHub</a>
+              <a class="link" href="https://www.linkedin.com/in/jibran-jan/" rel="me noopener">LinkedIn</a>
+            </div>
+          </div>
+
+          <ul class="stats">
+            <li><strong>370+</strong><span>pull requests merged since 2024</span></li>
+            <li><strong>2</strong><span>SaaS products in production</span></li>
+            <li><strong>768</strong><span>files moved onto design tokens</span></li>
+            <li><strong>1.4 MB</strong><span>cut from the main React bundle</span></li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section" id="work">
+        <div class="container">
+          <header class="section__head reveal">
+            <p class="label"><span>01</span> Selected work</p>
+            <h2>Work that <em>shipped</em></h2>
+            <p>
+              Everything here is production work at Equip and AutoProctor. The pictures are sketches rather than
+              screenshots, and the numbers come from the pull requests.
+            </p>
+          </header>
+
+          <div class="bento">
+            <article class="card card--wide reveal">
+              <div class="card__art" aria-hidden="true">
+                <div class="diff">
+                  <div class="diff__bar"><i></i><i></i><i></i><span>Button.tsx</span></div>
+                  <p class="del">- bg-blue-600 text-gray-700 border-gray-200</p>
+                  <p class="add">+ bg-primary text-ink-muted border-line</p>
+                  <p class="del">- fill="#1d4ed8"</p>
+                  <p class="add">+ fill="var(--primary)"</p>
+                  <div class="swatches">
+                    <i style="--c: #4f4b42"></i><i style="--c: #8b8881"></i><i style="--c: #b9b6af"></i>
+                    <i style="--c: #d9d5cc"></i><i style="--c: #a85507"></i><i style="--c: #f6a723"></i>
+                    <i style="--c: #fbd38d"></i><i style="--c: #17803d"></i><i style="--c: #5fd38d"></i>
+                    <i style="--c: #b93c0b"></i>
+                  </div>
                 </div>
+              </div>
+              <div class="card__body">
+                <p class="card__meta">Design systems / Equip / 2026</p>
+                <h3>One colour system across a 768-file React app</h3>
+                <p>
+                  Replaced the stock Tailwind palette with 39 role-named colour tokens. I wrote the codemod that
+                  rewrote every colour class and hex value, and a lint check that fails when a stock colour comes back.
+                </p>
+                <div class="card__foot">
+                  <ul class="tags">
+                    <li>React</li>
+                    <li>Tailwind CSS</li>
+                    <li>Codemod</li>
+                    <li>Lint check</li>
+                  </ul>
+                </div>
+              </div>
+            </article>
+
+            <article class="card card--narrow reveal">
+              <div class="card__art" aria-hidden="true">
+                <div class="bars">
+                  <div class="bars__row">
+                    <span>Before</span>
+                    <span class="bars__track"><span class="bars__fill" style="--w: 100%"></span></span>
+                    <span>4.3 MB</span>
+                  </div>
+                  <div class="bars__row bars__row--after">
+                    <span>After</span>
+                    <span class="bars__track"><span class="bars__fill" style="--w: 67%"></span></span>
+                    <span>2.9 MB</span>
+                  </div>
+                  <ul class="vitals">
+                    <li>LCP</li>
+                    <li>INP</li>
+                    <li>CLS</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="card__body">
+                <p class="card__meta">Performance / Equip / 2026</p>
+                <h3>Core Web Vitals, fixed on mobile</h3>
+                <p>
+                  Cut the React entry bundle from 4.3 MB to 2.9 MB by lazy-loading analytics SDKs and editors,
+                  swapped video and table embeds for click-to-load facades, and removed a layout shift of up to
+                  0.87 on skill pages.
+                </p>
+                <div class="card__foot">
+                  <ul class="tags">
+                    <li>Code splitting</li>
+                    <li>Lazy loading</li>
+                    <li>Lighthouse</li>
+                  </ul>
+                </div>
+              </div>
+            </article>
+
+            <article class="card card--narrow reveal">
+              <div class="card__art" aria-hidden="true">
+                <div class="wf wf--admin">
+                  <div class="wf__side">
+                    <b class="is-accent" style="width: 70%"></b>
+                    <b style="width: 90%"></b>
+                    <b style="width: 60%"></b>
+                    <b style="width: 80%"></b>
+                    <b style="width: 50%"></b>
+                    <b class="is-faint" style="width: 75%"></b>
+                  </div>
+                  <div class="wf__main">
+                    <b style="width: 38%; height: 0.625rem"></b>
+                    <div class="wf__row"><b></b><b class="is-faint"></b><b class="is-faint"></b><b class="is-accent"></b></div>
+                    <div class="wf__row"><b></b><b class="is-faint"></b><b class="is-faint"></b><b></b></div>
+                    <div class="wf__row"><b></b><b class="is-faint"></b><b class="is-faint"></b><b></b></div>
+                    <div class="wf__row"><b></b><b class="is-faint"></b><b class="is-faint"></b><b></b></div>
+                  </div>
+                </div>
+              </div>
+              <div class="card__body">
+                <p class="card__meta">Product / AutoProctor / 2026</p>
+                <h3>An admin area rebuilt as a React app</h3>
+                <p>
+                  Moved AutoProctor's test-admin screens from server-rendered pages to a single-page app: create
+                  test, settings, collaborators, team, unique links, usage and billing, with the API resources and
+                  database indexes behind them.
+                </p>
+                <div class="card__foot">
+                  <ul class="tags">
+                    <li>React</li>
+                    <li>TypeScript</li>
+                    <li>Flask</li>
+                    <li>PostgreSQL</li>
+                  </ul>
+                  <a class="link" href="https://www.autoproctor.co/" target="_blank" rel="noopener noreferrer">
+                    autoproctor.co
+                    <svg class="icon" aria-hidden="true"><use href="#i-arrow-up-right"/></svg>
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <article class="card card--wide reveal">
+              <div class="card__art" aria-hidden="true">
+                <div class="wf wf--table">
+                  <div class="wf__main">
+                    <div class="wf__row"><b class="is-accent"></b><b></b><b></b><b></b></div>
+                    <div class="wf__row"><b></b><b class="is-faint"></b><b class="is-faint"></b><b class="is-faint"></b></div>
+                    <div class="wf__row"><b></b><b class="is-faint"></b><b class="is-faint"></b><b class="is-faint"></b></div>
+                    <div class="wf__row"><b></b><b class="is-faint"></b><b class="is-faint"></b><b class="is-faint"></b></div>
+                    <div class="wf__row"><b></b><b class="is-faint"></b><b class="is-faint"></b><b class="is-faint"></b></div>
+                  </div>
+                  <div class="wf__panel">
+                    <span class="wf__avatar"></span>
+                    <b style="width: 80%"></b>
+                    <b class="is-faint" style="width: 60%"></b>
+                    <b class="is-faint" style="width: 90%"></b>
+                    <b class="is-faint" style="width: 70%"></b>
+                    <div class="wf__pager"><i></i><i></i></div>
+                  </div>
+                </div>
+              </div>
+              <div class="card__body">
+                <p class="card__meta">Product / Equip / 2026</p>
+                <h3>A quicker way through a hiring pipeline</h3>
+                <p>
+                  Click-to-sort on 18 data tables, filters for skill, experience and trust score, and a candidate
+                  side panel that prefetches the previous and next person, so moving through a list of applicants
+                  does not wait on the network.
+                </p>
+                <div class="card__foot">
+                  <ul class="tags">
+                    <li>React</li>
+                    <li>TanStack Query</li>
+                    <li>URL state</li>
+                    <li>Prefetching</li>
+                  </ul>
+                </div>
+              </div>
+            </article>
+
+            <article class="card card--wide reveal">
+              <div class="card__art" aria-hidden="true">
+                <div class="voice">
+                  <div class="wave">
+                    <i style="--h: 0.25; --i: 0"></i><i style="--h: 0.4; --i: 1"></i><i style="--h: 0.6; --i: 2"></i>
+                    <i style="--h: 0.35; --i: 3"></i><i style="--h: 0.8; --i: 4"></i><i style="--h: 0.55; --i: 5"></i>
+                    <i style="--h: 0.95; --i: 6"></i><i style="--h: 0.7; --i: 7"></i><i style="--h: 0.45; --i: 8"></i>
+                    <i style="--h: 0.85; --i: 9"></i><i style="--h: 0.6; --i: 10"></i><i style="--h: 0.3; --i: 11"></i>
+                    <i style="--h: 0.5; --i: 12"></i><i style="--h: 0.9; --i: 13"></i><i style="--h: 0.65; --i: 14"></i>
+                    <i style="--h: 0.4; --i: 15"></i><i style="--h: 0.75; --i: 16"></i><i style="--h: 1; --i: 17"></i>
+                    <i style="--h: 0.6; --i: 18"></i><i style="--h: 0.35; --i: 19"></i><i style="--h: 0.55; --i: 20"></i>
+                    <i style="--h: 0.8; --i: 21"></i><i style="--h: 0.45; --i: 22"></i><i style="--h: 0.7; --i: 23"></i>
+                    <i style="--h: 0.3; --i: 24"></i><i style="--h: 0.6; --i: 25"></i><i style="--h: 0.4; --i: 26"></i>
+                    <i style="--h: 0.25; --i: 27"></i>
+                  </div>
+                  <p class="heard"><span>Here's what we heard</span>"The quick brown fox jumps over the lazy dog."</p>
+                </div>
+              </div>
+              <div class="card__body">
+                <p class="card__meta">AI product UI / Equip / 2025 to 2026</p>
+                <h3>Interfaces for AI interviews</h3>
+                <p>
+                  A mic check that transcribes what the candidate said and shows it back before the interview
+                  starts, an audio player with a live waveform, and a "Write with AI" flow that validates questions
+                  pasted from ChatGPT or Claude before anything is saved.
+                </p>
+                <div class="card__foot">
+                  <ul class="tags">
+                    <li>Audio</li>
+                    <li>Speech to text</li>
+                    <li>Server-side validation</li>
+                  </ul>
+                </div>
+              </div>
+            </article>
+
+            <article class="card card--narrow reveal">
+              <div class="card__art" aria-hidden="true">
+                <div class="wf wf--browser">
+                  <div class="wf__chrome"><i></i><i></i><i></i><span></span></div>
+                  <div class="wf__hero">
+                    <b></b>
+                    <b></b>
+                    <b class="is-faint"></b>
+                    <div class="wf__cta"><i></i><span>1 constant, every price</span></div>
+                  </div>
+                </div>
+              </div>
+              <div class="card__body">
+                <p class="card__meta">Marketing site / Equip / 2026</p>
+                <h3>A marketing site, rebuilt in a new brand</h3>
+                <p>
+                  Rebuilt the homepage, navigation, pricing and product pages in the new design, with structured
+                  data and Open Graph images. One constant now drives every price shown across templates, React
+                  and JSON-LD.
+                </p>
+                <div class="card__foot">
+                  <ul class="tags">
+                    <li>Jinja</li>
+                    <li>Tailwind CSS</li>
+                    <li>SEO</li>
+                  </ul>
+                  <a class="link" href="https://equip.co/" target="_blank" rel="noopener noreferrer">
+                    equip.co
+                    <svg class="icon" aria-hidden="true"><use href="#i-arrow-up-right"/></svg>
+                  </a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="experience">
+        <div class="container">
+          <header class="section__head reveal">
+            <p class="label"><span>02</span> Experience</p>
+            <h2>Intern to engineer, <em>same team</em></h2>
+          </header>
+
+          <article class="xp reveal">
+            <p class="xp__when">Aug 2024 to present</p>
+            <div>
+              <h3>Frontend Developer</h3>
+              <p class="xp__org">Equip and AutoProctor, Bengaluru</p>
+              <ul class="xp__list">
+                <li>Build recruiter and candidate features in React and TypeScript across both products, plus the Jinja marketing sites that sit in front of them.</li>
+                <li>Take features end to end when they need it: Flask endpoints, SQLAlchemy models and Alembic migrations as well as the UI.</li>
+                <li>Shipped the colour-token migration, the mobile Core Web Vitals work and the AutoProctor admin rebuild shown above.</li>
+              </ul>
             </div>
-            <!-- The below div is the same as we used in header section -->
-            <div class="mid_header">
-                <ul type="none" class="nav_ul2"> 
-                    <li><a href="https://www.instagram.com/jibran_jan_"><i class="fa-brands fa-instagram"></i></a></li>
-                    <li><a href="https://github.com/jibranjan"><i class="fa-brands fa-github"></i></a></li>
-                    <li><a href="https://www.linkedin.com/in/jibran-jan"><i class="fa-brands fa-linkedin-in"></i></a></li>
-                    <li><a href="https://www.facebook.com/jibranjan77"><i class="fa-brands fa-facebook-f"></i></a></li>
-                </ul>
+          </article>
+
+          <article class="xp reveal">
+            <p class="xp__when">Feb 2024 to Aug 2024</p>
+            <div>
+              <h3>UI/UX Intern</h3>
+              <p class="xp__org">Equip, Bengaluru</p>
+              <ul class="xp__list">
+                <li>Built and restyled marketing pages in Jinja and Tailwind CSS: competitor comparisons, campus hiring, customers and the demo-booking flow.</li>
+                <li>Rebuilt the recruiter team and profile screens, and moved older jQuery pages to plain JavaScript.</li>
+                <li>Joined full-time when the internship ended.</li>
+              </ul>
             </div>
-        </section>
-        
+          </article>
+
+          <article class="xp reveal">
+            <p class="xp__when">2020 to 2024</p>
+            <div>
+              <h3>B.Tech, Computer Science</h3>
+              <p class="xp__org">Rayat Bahra University, Mohali</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="toolkit">
+        <div class="container">
+          <header class="section__head reveal">
+            <p class="label"><span>03</span> Toolkit</p>
+            <h2>What I reach for</h2>
+          </header>
+
+          <div class="toolkit">
+            <section class="toolkit__group reveal">
+              <h3>Frontend</h3>
+              <ul class="chips">
+                <li>React</li>
+                <li>TypeScript</li>
+                <li>JavaScript</li>
+                <li>HTML and CSS</li>
+                <li>Tailwind CSS</li>
+                <li>Vite</li>
+                <li>React Router</li>
+                <li>TanStack Query</li>
+                <li>TanStack Form</li>
+                <li>shadcn/ui</li>
+              </ul>
+            </section>
+
+            <section class="toolkit__group reveal">
+              <h3>Backend</h3>
+              <ul class="chips">
+                <li>Python</li>
+                <li>Flask</li>
+                <li>SQLAlchemy</li>
+                <li>Alembic</li>
+                <li>PostgreSQL</li>
+                <li>REST APIs</li>
+                <li>Jinja</li>
+              </ul>
+            </section>
+
+            <section class="toolkit__group reveal">
+              <h3>Performance and SEO</h3>
+              <ul class="chips">
+                <li>Core Web Vitals</li>
+                <li>Lighthouse</li>
+                <li>Code splitting</li>
+                <li>Lazy loading</li>
+                <li>JSON-LD</li>
+                <li>Open Graph</li>
+              </ul>
+            </section>
+
+            <section class="toolkit__group reveal">
+              <h3>Tools</h3>
+              <ul class="chips">
+                <li>Git and GitHub</li>
+                <li>Figma</li>
+                <li>Sentry</li>
+                <li>PostHog</li>
+                <li>Sanity CMS</li>
+                <li>Claude Code</li>
+                <li>Cursor</li>
+              </ul>
+            </section>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="approach">
+        <div class="container">
+          <header class="section__head reveal">
+            <p class="label"><span>04</span> How I work</p>
+            <h2>Four habits I keep</h2>
+          </header>
+
+          <ul class="principles">
+            <li class="reveal">
+              <span>01</span>
+              <h3>Measure first</h3>
+              <p>I find out which part of a slow page is actually slow before I change anything. Shaving bytes off a page that was never blocked fixes nothing.</p>
+            </li>
+            <li class="reveal">
+              <span>02</span>
+              <h3>Tokens, not hex codes</h3>
+              <p>Colour, spacing and type come from the system. When the system is missing something, the system changes, not one page.</p>
+            </li>
+            <li class="reveal">
+              <span>03</span>
+              <h3>Checked in the browser</h3>
+              <p>A diff that looks right is only a guess. I open the real page, at phone width too, before I call anything done.</p>
+            </li>
+            <li class="reveal">
+              <span>04</span>
+              <h3>AI agents, with checkpoints</h3>
+              <p>I work with AI coding agents every day. The work still moves through a spec, a plan, a browser check and a review, one step at a time.</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section" id="about">
+        <div class="container about">
+          <div class="about__photo reveal">
+            <img src="assets/img/jibran.webp" width="720" height="900" alt="Jibran Jan" loading="lazy" decoding="async">
+          </div>
+          <div class="about__text reveal">
+            <header class="section__head">
+              <p class="label"><span>05</span> About</p>
+              <h2>From Srinagar, working in <em>Bengaluru</em></h2>
+            </header>
+            <p>
+              I grew up in Srinagar, Kashmir, and studied computer science at Rayat Bahra University. I joined
+              <strong>Equip</strong> as a UI/UX intern in February 2024 and moved to a full-time role six months later.
+            </p>
+            <p>
+              I like the unglamorous parts of frontend: the empty state, the 375-pixel layout, the error message
+              that says what actually went wrong. Most of what I know came from shipping small things often and
+              reading closely when they broke.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="contact">
+        <div class="container contact reveal">
+          <p class="label"><span>06</span> Contact</p>
+          <h2>Have something that should feel <em>faster</em>?</h2>
+          <p>Email is the quickest way to reach me.</p>
+          <div class="contact__email">
+            <a href="mailto:jibranjan77@gmail.com">jibranjan77@gmail.com</a>
+            <button class="btn btn--primary btn--small" type="button" data-copy="jibranjan77@gmail.com">
+              <svg class="icon" aria-hidden="true"><use href="#i-copy"/></svg>
+              <span data-copy-label>Copy</span>
+            </button>
+          </div>
+          <div class="contact__links">
+            <a class="link" href="https://www.linkedin.com/in/jibran-jan/" rel="me noopener">LinkedIn</a>
+            <a class="link" href="https://github.com/jibranjan" rel="me noopener">GitHub</a>
+            <a class="link" href="resume/Jibran-Jan-Resume.pdf">Résumé (PDF)</a>
+          </div>
+        </div>
+      </section>
     </main>
-    
-</body>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>&copy; 2026 Jibran Jan. Hand-written HTML and CSS, no framework, no trackers.</p>
+        <p><q>I make things fast, add AI to slow them down again, then act as if the loading spinner is a feature.</q></p>
+      </div>
+    </footer>
+
+    <script type="module" src="assets/js/main.js"></script>
+  </body>
 </html>
