@@ -49,10 +49,9 @@
         "url": "https://jibranjan.github.io/Portfolio./",
         "image": "https://jibranjan.github.io/Portfolio./assets/img/jibran.webp",
         "address": { "@type": "PostalAddress", "addressLocality": "Bengaluru", "addressCountry": "IN" },
-        "alumniOf": { "@type": "CollegeOrUniversity", "name": "Rayat Bahra University" },
         "worksFor": { "@type": "Organization", "name": "Equip", "url": "https://equip.co/" },
         "sameAs": ["https://www.linkedin.com/in/jibran-jan/", "https://github.com/jibranjan"],
-        "knowsAbout": ["React", "TypeScript", "JavaScript", "Tailwind CSS", "Web performance", "Design systems", "Python", "Flask", "PostgreSQL"]
+        "knowsAbout": ["React", "TypeScript", "JavaScript", "Tailwind CSS", "Web performance", "Design systems", "Core Web Vitals"]
       }
     </script>
   </head>
@@ -117,9 +116,9 @@
           <h1>Frontend engineer building interfaces that load <em>fast</em> and read <em>clearly</em>.</h1>
 
           <p class="hero__lede">
-            For the past two and a half years I have worked on <strong>Equip</strong> and <strong>AutoProctor</strong>,
-            two SaaS products for hiring and online exams. Mostly React and TypeScript, and often the Flask and
-            PostgreSQL code behind the screen.
+            For the past two and a half years I have worked on <a href="https://equip.co/" target="_blank" rel="noopener noreferrer">Equip</a> and <a href="https://www.autoproctor.co/" target="_blank" rel="noopener noreferrer">AutoProctor</a>,
+            two SaaS products for hiring and online exams. React and TypeScript first, with enough Python and
+            Flask to follow a feature through to the API.
           </p>
 
           <div class="hero__actions">
@@ -128,14 +127,14 @@
                 See selected work
                 <svg class="icon" aria-hidden="true"><use href="#i-arrow-down"/></svg>
               </a>
-              <a class="btn btn--ghost" href="resume/Jibran-Jan-Resume.pdf">
+              <a class="btn btn--ghost" href="resume/Jibran-Jan-Resume.pdf" target="_blank" rel="noopener noreferrer">
                 Résumé (PDF)
                 <svg class="icon" aria-hidden="true"><use href="#i-arrow-up-right"/></svg>
               </a>
             </div>
             <div class="hero__links">
-              <a class="link" href="https://github.com/jibranjan" rel="me noopener">GitHub</a>
-              <a class="link" href="https://www.linkedin.com/in/jibran-jan/" rel="me noopener">LinkedIn</a>
+              <a class="link" href="https://github.com/jibranjan" rel="me noopener" target="_blank">GitHub</a>
+              <a class="link" href="https://www.linkedin.com/in/jibran-jan/" rel="me noopener" target="_blank">LinkedIn</a>
             </div>
           </div>
 
@@ -257,15 +256,12 @@
                 <h3>An admin area rebuilt as a React app</h3>
                 <p>
                   Moved AutoProctor's test-admin screens from server-rendered pages to a single-page app: create
-                  test, settings, collaborators, team, unique links, usage and billing, with the API resources and
-                  database indexes behind them.
+                  test, settings, collaborators, team, unique links, usage and billing.
                 </p>
                 <div class="card__foot">
                   <ul class="tags">
                     <li>React</li>
                     <li>TypeScript</li>
-                    <li>Flask</li>
-                    <li>PostgreSQL</li>
                   </ul>
                   <a class="link" href="https://www.autoproctor.co/" target="_blank" rel="noopener noreferrer">
                     autoproctor.co
@@ -383,6 +379,26 @@
                 </div>
               </div>
             </article>
+
+            <article class="card card--full reveal">
+              <div class="card__body">
+                <p class="card__meta"><span class="card__status">In progress</span> Data quality / Equip / 2026</p>
+                <h3>Filing résumé names under the right company and college</h3>
+                <p>
+                  The parser read names correctly, but a letter-similarity score then filed them under look-alikes,
+                  so "Univ. of Miami" missed "University of Miami". I traced it to three import paths with three
+                  different cutoffs, wrote up twelve issues with real examples, and am replacing the score with one
+                  matcher that compares whole words, measured before and after on the same set of test résumés.
+                </p>
+                <div class="card__foot">
+                  <ul class="tags">
+                    <li>Investigation</li>
+                    <li>Matching rules</li>
+                    <li>Before and after tests</li>
+                  </ul>
+                </div>
+              </div>
+            </article>
           </div>
         </div>
       </section>
@@ -398,10 +414,10 @@
             <p class="xp__when">Aug 2024 to present</p>
             <div>
               <h3>Frontend Developer</h3>
-              <p class="xp__org">Equip and AutoProctor, Bengaluru</p>
+              <p class="xp__org"><a href="https://equip.co/" target="_blank" rel="noopener noreferrer">Equip</a> and <a href="https://www.autoproctor.co/" target="_blank" rel="noopener noreferrer">AutoProctor</a>, Bengaluru</p>
               <ul class="xp__list">
                 <li>Build recruiter and candidate features in React and TypeScript across both products, plus the Jinja marketing sites that sit in front of them.</li>
-                <li>Take features end to end when they need it: Flask endpoints, SQLAlchemy models and Alembic migrations as well as the UI.</li>
+                <li>Follow a feature into the Flask API when it needs a small backend change, rather than handing it over half done.</li>
                 <li>Shipped the colour-token migration, the mobile Core Web Vitals work and the AutoProctor admin rebuild shown above.</li>
               </ul>
             </div>
@@ -411,20 +427,12 @@
             <p class="xp__when">Feb 2024 to Aug 2024</p>
             <div>
               <h3>UI/UX Intern</h3>
-              <p class="xp__org">Equip, Bengaluru</p>
+              <p class="xp__org"><a href="https://equip.co/" target="_blank" rel="noopener noreferrer">Equip</a>, Bengaluru</p>
               <ul class="xp__list">
                 <li>Built and restyled marketing pages in Jinja and Tailwind CSS: competitor comparisons, campus hiring, customers and the demo-booking flow.</li>
                 <li>Rebuilt the recruiter team and profile screens, and moved older jQuery pages to plain JavaScript.</li>
                 <li>Joined full-time when the internship ended.</li>
               </ul>
-            </div>
-          </article>
-
-          <article class="xp reveal">
-            <p class="xp__when">2020 to 2024</p>
-            <div>
-              <h3>B.Tech, Computer Science</h3>
-              <p class="xp__org">Rayat Bahra University, Mohali</p>
             </div>
           </article>
         </div>
@@ -455,12 +463,10 @@
             </section>
 
             <section class="toolkit__group reveal">
-              <h3>Backend</h3>
+              <h3>Working knowledge</h3>
               <ul class="chips">
                 <li>Python</li>
                 <li>Flask</li>
-                <li>SQLAlchemy</li>
-                <li>Alembic</li>
                 <li>PostgreSQL</li>
                 <li>REST APIs</li>
                 <li>Jinja</li>
@@ -538,8 +544,7 @@
               <h2>From Srinagar, working in <em>Bengaluru</em></h2>
             </header>
             <p>
-              I grew up in Srinagar, Kashmir, and studied computer science at Rayat Bahra University. I joined
-              <strong>Equip</strong> as a UI/UX intern in February 2024 and moved to a full-time role six months later.
+              I grew up in Srinagar, Kashmir. I joined <a href="https://equip.co/" target="_blank" rel="noopener noreferrer">Equip</a> as a UI/UX intern in February 2024 and moved to a full-time role six months later.
             </p>
             <p>
               I like the unglamorous parts of frontend: the empty state, the 375-pixel layout, the error message
@@ -563,9 +568,9 @@
             </button>
           </div>
           <div class="contact__links">
-            <a class="link" href="https://www.linkedin.com/in/jibran-jan/" rel="me noopener">LinkedIn</a>
-            <a class="link" href="https://github.com/jibranjan" rel="me noopener">GitHub</a>
-            <a class="link" href="resume/Jibran-Jan-Resume.pdf">Résumé (PDF)</a>
+            <a class="link" href="https://www.linkedin.com/in/jibran-jan/" rel="me noopener" target="_blank">LinkedIn</a>
+            <a class="link" href="https://github.com/jibranjan" rel="me noopener" target="_blank">GitHub</a>
+            <a class="link" href="resume/Jibran-Jan-Resume.pdf" target="_blank" rel="noopener noreferrer">Résumé (PDF)</a>
           </div>
         </div>
       </section>
