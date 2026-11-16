@@ -158,54 +158,6 @@
           </header>
 
           <div class="bento">
-            <article class="card card--feature reveal">
-              <div class="card__body">
-                <p class="card__meta"><span class="card__status">In progress</span> Search and matching / Equip / 2026</p>
-                <h3>The wrong matches were scoring higher than the right ones.</h3>
-                <p>
-                  When a résumé is uploaded, every employer and college on it has to be matched against tens of
-                  thousands of known names. The matcher compared letters, not words, so "Univ. of Miami" landed
-                  on "Miami University of Ohio" while the real University of Miami was missed.
-                </p>
-                <p>
-                  Tightening the threshold could not fix it. I measured real cases and found the look-alikes
-                  scoring up to 0.75 while genuine matches topped out at 0.67, so no cutoff lets the right ones
-                  through and keeps the wrong ones out. I am replacing the score with one matcher that compares
-                  whole words, shared by all three import paths and checked against the same test résumés before
-                  and after.
-                </p>
-                <ul class="feature__stats">
-                  <li><strong>0.75</strong><span>best score of a wrong match</span></li>
-                  <li><strong>0.67</strong><span>best score of a right one</span></li>
-                  <li><strong>3</strong><span>import paths, 3 different rules</span></li>
-                </ul>
-                <div class="card__foot">
-                  <ul class="tags">
-                    <li>Root-cause analysis</li>
-                    <li>Entity matching</li>
-                    <li>Python</li>
-                    <li>Test set</li>
-                  </ul>
-                </div>
-              </div>
-              <div class="card__art" aria-hidden="true">
-                <div class="match">
-                  <div class="match__head"><span>Résumé says</span><span>Matched to</span></div>
-                  <div class="match__row">
-                    <span>Univ. of Miami</span>
-                    <span><s>Miami University of Ohio</s><b>University of Miami</b></span>
-                  </div>
-                  <div class="match__row">
-                    <span>Delhi University</span>
-                    <span><s>National Law University Delhi</s><b>Delhi University</b></span>
-                  </div>
-                  <div class="match__row">
-                    <span>BITS Pilani</span>
-                    <span><s>No match</s><b>BITS Pilani</b></span>
-                  </div>
-                </div>
-              </div>
-            </article>
             <article class="card card--wide reveal">
               <div class="card__art" aria-hidden="true">
                 <div class="diff">
@@ -423,6 +375,55 @@
                     equip.co
                     <svg class="icon" aria-hidden="true"><use href="#i-arrow-up-right"/></svg>
                   </a>
+                </div>
+              </div>
+            </article>
+
+            <article class="card card--feature reveal">
+              <div class="card__body">
+                <p class="card__meta">Search and matching / Equip / 2026</p>
+                <h3>The wrong matches were scoring higher than the right ones.</h3>
+                <p>
+                  When a résumé is uploaded, every employer and college on it has to be matched against tens of
+                  thousands of known names. The matcher compared letters, not words, so "Univ. of Miami" landed
+                  on "Miami University of Ohio" while the real University of Miami was missed.
+                </p>
+                <p>
+                  Tightening the threshold could not fix it. I measured real cases and found the look-alikes
+                  scoring up to 0.75 while genuine matches topped out at 0.67, so no cutoff lets the right ones
+                  through and keeps the wrong ones out. The fix is one matcher that compares
+                  whole words, shared by all three import paths and checked against the same test résumés before
+                  and after.
+                </p>
+                <ul class="feature__stats">
+                  <li><strong>0.75</strong><span>best score of a wrong match</span></li>
+                  <li><strong>0.67</strong><span>best score of a right one</span></li>
+                  <li><strong>3</strong><span>import paths, 3 different rules</span></li>
+                </ul>
+                <div class="card__foot">
+                  <ul class="tags">
+                    <li>Root-cause analysis</li>
+                    <li>Entity matching</li>
+                    <li>Python</li>
+                    <li>Test set</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="card__art" aria-hidden="true">
+                <div class="match">
+                  <div class="match__head"><span>Résumé says</span><span>Matched to</span></div>
+                  <div class="match__row">
+                    <span>Univ. of Miami</span>
+                    <span><s>Miami University of Ohio</s><b>University of Miami</b></span>
+                  </div>
+                  <div class="match__row">
+                    <span>Delhi University</span>
+                    <span><s>National Law University Delhi</s><b>Delhi University</b></span>
+                  </div>
+                  <div class="match__row">
+                    <span>BITS Pilani</span>
+                    <span><s>No match</s><b>BITS Pilani</b></span>
+                  </div>
                 </div>
               </div>
             </article>
